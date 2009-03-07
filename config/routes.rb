@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -33,7 +36,7 @@ ActionController::Routing::Routes.draw do |map|
 #  map.connect ':controller/:action/:id'
 #  map.connect ':controller/:action/:id.:format'
 
-  map.root :controller=>'epicbin'
-  map.connect '/check', :controller=>'epicbin', :action=>'check'
+  map.root :controller=>'users'
+  map.connect '/create', :controller=>'users', :action=>'create'
 
 end

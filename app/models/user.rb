@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   validates_format_of :postcode, :with=> Postcode::POSTCODE_REGX
 
   def after_validation
-    self.postcode = Postcode.extract_postcode(postcode)
+    self.postcode = Postcode.extract_postcode(postcode) unless self.errors[:postcode]
   end
 
 
