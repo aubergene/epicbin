@@ -8,7 +8,7 @@ namespace :twitter do
     for collection in collections
       tweet = "@#{collection.user.twitter_username} - Don't forget to put out your bin tonight for #{collection.name}! #epicbin"
       puts tweet
-#        Twitter::Base.new("aubergene+epicbin@gmail.com", TWITTER_PASSWORD).update(tweet)
+      Twitter::Base.new("aubergene+epicbin@gmail.com", TWITTER_PASSWORD).update(tweet)
 #      sleep(TWEET_DELAY) # don't hit Twitter too frequently or it might get upset
     end
   end

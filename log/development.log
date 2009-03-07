@@ -3384,3 +3384,51 @@ Completed in 36ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/users]
   [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
   [4;36;1mCollection Load (1.2ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
   [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCollection Load (3.8ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCollection Load (1.2ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (2.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Delete all (13.7ms)[0m   [0mDELETE FROM "users" WHERE 1=1[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Create (1.8ms)[0m   [0mINSERT INTO "users" ("updated_at", "twitter_username", "postcode", "created_at") VALUES('2009-03-07 17:52:32', 'jonocole', 'TN1 2XJ', '2009-03-07 17:52:32')[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("updated_at", "twitter_username", "postcode", "created_at") VALUES('2009-03-07 17:52:42', 'aubergene', 'TN1 2XJ', '2009-03-07 17:52:42')[0m
+  [4;35;1mUser Create (7.4ms)[0m   [0mINSERT INTO "users" ("updated_at", "twitter_username", "postcode", "created_at") VALUES('2009-03-07 17:53:05', 'chris_d_adams', 'TN1 2XJ', '2009-03-07 17:53:05')[0m
+  [4;36;1mUser Create (0.7ms)[0m   [0;1mINSERT INTO "users" ("updated_at", "twitter_username", "postcode", "created_at") VALUES('2009-03-07 17:53:13', 'williamchak', 'TN1 2XJ', '2009-03-07 17:53:13')[0m
+  [4;35;1mUser Load (2.4ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mCollection Load (1.9ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (2.4ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mCollection Create (4.4ms)[0m   [0mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:55:12', 6, 7, '2009-03-07 17:55:12')[0m
+  [4;36;1mCollection Create (0.5ms)[0m   [0;1mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:55:12', 6, 8, '2009-03-07 17:55:12')[0m
+  [4;35;1mCollection Create (0.4ms)[0m   [0mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:55:12', 6, 9, '2009-03-07 17:55:12')[0m
+  [4;36;1mCollection Create (0.3ms)[0m   [0;1mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:55:12', 6, 10, '2009-03-07 17:55:12')[0m
+  [4;36;1mCollection Load (2.1ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (28.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (7,8,9,1,10)) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCollection Load (3.0ms)[0m   [0mSELECT * FROM "collections" [0m
+  [4;36;1mCollection Load (2.8ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (7,8,9,1,10)) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCollection Load (3.0ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mCollection Load (2.3ms)[0m   [0mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (2.3ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mCollection Create (0.5ms)[0m   [0;1mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:18', 6, 7, '2009-03-07 17:56:18')[0m
+  [4;35;1mCollection Create (1.1ms)[0m   [0mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:18', 6, 8, '2009-03-07 17:56:18')[0m
+  [4;36;1mCollection Create (0.4ms)[0m   [0;1mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:18', 6, 9, '2009-03-07 17:56:18')[0m
+  [4;35;1mCollection Create (0.4ms)[0m   [0mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:18', 6, 10, '2009-03-07 17:56:18')[0m
+  [4;36;1mCollection Delete all (4.8ms)[0m   [0;1mDELETE FROM "collections" WHERE 1=1[0m
+  [4;35;1mUser Load (1.6ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mCollection Create (0.4ms)[0m   [0;1mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:34', 6, 7, '2009-03-07 17:56:34')[0m
+  [4;35;1mCollection Create (0.4ms)[0m   [0mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:34', 6, 8, '2009-03-07 17:56:34')[0m
+  [4;36;1mCollection Create (0.3ms)[0m   [0;1mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:34', 6, 9, '2009-03-07 17:56:34')[0m
+  [4;35;1mCollection Create (0.4ms)[0m   [0mINSERT INTO "collections" ("name", "updated_at", "dow", "user_id", "created_at") VALUES('Normal refuse', '2009-03-07 17:56:34', 6, 10, '2009-03-07 17:56:34')[0m
+  [4;36;1mCollection Load (2.0ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (2.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IN (7,8,9,10)) [0m

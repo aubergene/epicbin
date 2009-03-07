@@ -58,5 +58,5 @@ Rails::Initializer.run do |config|
   # config.active_record.default_timezone = :utc
 end
 
-TWITTER_PASSWORD = "rewiredstate"
+TWITTER_PASSWORD = "wiredstate"
 TWEET_DELAY = 5 # number of seconds between requests to prevent Twitter getting upset
