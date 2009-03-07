@@ -14,15 +14,15 @@ ActiveRecord::Schema.define(:version => 2) do
   create_table "collections", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.datetime "time"
-    t.string   "type"
+    t.integer  "dow"
+    t.string   "name"
     t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
+    t.string   "twitter_username"
     t.string   "postcode"
   end
 

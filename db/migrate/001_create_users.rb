@@ -2,7 +2,7 @@ class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
       t.timestamps
-      t.column :name, :string
+      t.column :twitter_username, :string
       t.column :postcode, :string
     end
   end

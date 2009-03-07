@@ -3,9 +3,9 @@ class CreateCollections < ActiveRecord::Migration
     create_table :collections do |t|
 
       t.timestamps
-      t.column :time, :datetime
-      t.column :type, :string
-      t.column :user_id, :integer
+      t.column :dow,      :integer
+      t.column :name,     :string
+      t.column :user_id,  :integer
     end
   end
 

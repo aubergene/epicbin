@@ -59,4 +59,4 @@ Rails::Initializer.run do |config|
 end
 
 TWITTER_PASSWORD = "rewiredstate"
-TWITTER_DELAY = 5 # number of seconds between requests to prevent Twitter getting upset
+TWEET_DELAY = 5 # number of seconds between requests to prevent Twitter getting upset
