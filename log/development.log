@@ -3380,3 +3380,7 @@ Processing UsersController#index (for 127.0.0.1 at 2009-03-07 17:28:59) [GET]
 Rendering template within layouts/users
 Rendering users/index
 Completed in 36ms (View: 9, DB: 0) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mCollection Load (1.3ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCollection Load (1.2ms)[0m   [0;1mSELECT * FROM "collections" WHERE ("collections"."dow" = 6) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
