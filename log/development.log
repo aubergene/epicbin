@@ -1,1 +1,42 @@
-# Logfile created on Sat Mar 07 15:40:29 +0000 2009
+# Logfile created on Sat Mar 07 15:40:29 +0000 2009  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (8.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (1)
+  [4;36;1mSQL (48.3ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "name" varchar(255), "postcode" varchar(255)) [0m
+  [4;35;1mSQL (9.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateCollections (2)
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCREATE TABLE "collections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "time" datetime, "type" varchar(255), "user_id" integer) [0m
+  [4;35;1mSQL (14.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("collections")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mUser Create (1.4ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "postcode", "created_at") VALUES('Test', '2009-03-07 16:01:26', 'tn12xj', '2009-03-07 16:01:26')[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mUser Create (1.5ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "postcode", "created_at") VALUES(NULL, '2009-03-07 16:02:58', 'tn1 2xj', '2009-03-07 16:02:58')[0m
+  [4;36;1mUser Create (1.5ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "postcode", "created_at") VALUES(NULL, '2009-03-07 16:10:05', 'tn12xj', '2009-03-07 16:10:05')[0m
+  [4;36;1mUser Create (1.5ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "postcode", "created_at") VALUES('test', '2009-03-07 16:12:33', 'tn12xj', '2009-03-07 16:12:33')[0m
+  [4;35;1mUser Create (0.8ms)[0m   [0mINSERT INTO "users" ("name", "updated_at", "postcode", "created_at") VALUES('test', '2009-03-07 16:13:03', 'TN1 2XJ', '2009-03-07 16:13:03')[0m

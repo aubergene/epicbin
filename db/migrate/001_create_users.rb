@@ -3,6 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.timestamps
       t.column :name, :string
+      t.column :postcode, :string
     end
   end
 
