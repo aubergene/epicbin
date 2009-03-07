@@ -1,11 +1,11 @@
 class EpicbinController < ApplicationController
 
-    def index
-        
+  def check
+    if user = User.create(:twitter_username=>params[:twitter_username])
+      render :text=>user.inspect
+    else
+      render :index
     end
+  end
 
-    def submit
-        @user = User.new do |u|
-        end
-    end
 end
